@@ -1,10 +1,9 @@
-# aqua-fair
-# Smart Water Distribution Management System (Monorepo)
+Many cities struggle with **uneven water supply**, leaks, excess pumping, and lack of real-time visibility.  
+This system provides a **smart monitoring and management platform** that helps municipal authorities:
 
-A web + backend system designed to help cities ensure **fair, efficient, and transparent water distribution**.  
-This project provides:
-
-- A **React (Vite)** frontend for dashboards and citizen reporting  
-- A **Node.js + Express** backend for APIs and system logic  
-- A simple monorepo structure for clean development and deployment  
+- Track pump status, flow, and pressure in real time  
+- Detect leaks and anomalies early  
+- Optimize pumping schedules using data  
+- Allow citizens to report shortages or leaks instantly  
+- Improve fairness between all supply zones  
 
