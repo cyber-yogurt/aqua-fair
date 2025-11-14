@@ -2,3 +2,23 @@ cd frontend
 npm create vite@latest . -- --template react
 npm install
 cd ..
+import { useEffect, useState } from "react";
+
+function App() {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:5000/")
+      .then((res) => res.text())
+      .then((data) => setMessage(data));
+  }, []);
+
+  return (
+    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+      <h1>Smart Water System – Frontend</h1>
+      <p>Backend says: <b>{message}</b></p>
+    </div>
+  );
+}
+
+export default App;
